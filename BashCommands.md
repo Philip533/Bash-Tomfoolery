@@ -9,11 +9,11 @@ Counts hoow many lines are in a file and outputs it to terminal.
 
 Loop over chosen set of numbers with given interval
 
-**for i in $(seq start step end); do
+**for i in $(seq start step end); do**
 
-     commands here
+     **commands here**
 
-done**
+**done**
 
 
 
