@@ -31,3 +31,12 @@ Combining operations
 Check STDIN condition
 
 [[ -t 0 ]]
+
+Pattern matched conditionals
+
+case word in
+  * pattern)
+    * list;;
+  * pattern1 | pattern 2)
+    * list1;;
+esac
