@@ -55,13 +55,13 @@ Parameter Expansion
 
 Pattern Substitution
 
-**${param/pattern/string} - Simple pattern substitution of first occurrence.
+**${param/pattern/string} - Simple pattern substitution of first occurrence**
 
-**${param//pattern/string} - Simple pattern substitution of all occurrences.
+**${param//pattern/string} - Simple pattern substitution of all occurrences**
 
-**${param/#pattern/string} - Simple pattern substitution from left edge.
+**${param/#pattern/string} - Simple pattern substitution from left edge**
 
-**${param/%pattern/string} - Simple pattern substitution from right edge.
+**${param/%pattern/string} - Simple pattern substitution from right edge**
 
 Positional Parameters
 
