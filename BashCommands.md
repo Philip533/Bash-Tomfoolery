@@ -67,7 +67,7 @@ Positional Parameters
 
 **$# - Prints out the amount of parameters**
 
-**$* - Prints out the parameters on one line**
+**$\* - Prints out the parameters on one line**
 
 **$@ - Prints out the parameters on new lines**
 
