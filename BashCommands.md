@@ -1,6 +1,6 @@
 Checks if a directory exists and creates it if it doesn't exist.
 
-**[ ! -d "BLOCKED_AVERAGES" ] && mkdir BLOCKED_AVERAGES**
+**[ ! -d "DIRECTORY" ] && mkdir DIRECTORY** or **test -d "DIRECTORY" && mkdir DIRECTORY
 
 Counts how many lines are in a file and outputs it to terminal.
 
@@ -27,3 +27,7 @@ Combining operations
 **list && list1 - Execute list then execute list1 only if list returns 0**
 
 **list || list1 - Execute list then execute list1 only if list returns non-zero**
+
+Check STDIN condition
+
+[[ -t 0 ]]
