@@ -40,3 +40,48 @@ case word in
   * pattern1 | pattern 2)
     * list1;;
 esac
+
+Parameter Expansion
+
+**${param?error} - Returns error if param is unset**
+
+**{$param:offset:length} - Extracts substring from param**
+
+**{$param#pattern} - Removes pattern from left edge**
+
+**{$paaram%pattern} - Removes pattern from right edge**
+
+**${#param} - Expand parameter length**
+
+Pattern Substitution
+
+**${param/pattern/string} - Simple pattern substitution of first occurrence.
+
+**${param//pattern/string} - Simple pattern substitution of all occurrences.
+
+**${param/#pattern/string} - Simple pattern substitution from left edge.
+
+**${param/%pattern/string} - Simple pattern substitution from right edge.
+
+Positional Parameters
+
+**$# - Prints out the amount of parameters**
+
+**$* - Prints out the parameters on one line**
+
+**$@ - Prints out the parameters on new lines**
+
+Arrays
+
+**array=(zero one two three "four five") - Assign an array by elements**
+
+**array+=("six seven" [0] = ZERO) - Add an element or modify an element**
+
+**echo ${!array[@]} - Print array indices**
+
+**array=("${array[@]:2:3}") - Recreate array with indices 2 to 4**
+
+
+
+
+
