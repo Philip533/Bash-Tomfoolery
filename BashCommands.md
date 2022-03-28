@@ -8,7 +8,7 @@ Counts how many lines are in a file and outputs it to terminal.
 
 Loop over chosen set of numbers with given interval
 
-**for i in $(seq start step end); do**
+**for i in $(seq start step end); do** or ** for (( i=0 ; i<5 ; i++ ))**
 
 **commands here**
 
@@ -16,7 +16,7 @@ Loop over chosen set of numbers with given interval
 
 Arithmetic stuff using bc + pipe, performs operation to 10dp
 
-**x = `echo "scale = 10; 5 * 4" | bc`**
+**x = $(echo "scale = 10; 5 * 4" | bc)**
 
 Combining operations
 
@@ -81,7 +81,26 @@ Arrays
 
 **array=("${array[@]:2:3}") - Recreate array with indices 2 to 4**
 
+Associative Arrays
 
+**declare -A array=( [item] = 1 [item1] = 2 - Create an array using names for indices**
 
+**echo "${array[@]}" - List items in array**
 
+**echo "${!array[@]}" - List item keys in array**
+
+Select parameter from a list of choices
+
+**select choice in one two "three four"** 
+**do**
+
+**echo "$REPLY : $choice"**
+
+**done**
+
+Subshells
+
+**(x=hello; echo "x: $x") - Run group of commands in a subshell which will have local variables**
+
+**{ x=hello; echo "x: $x"; } - Runs group of commands in a subshell which will have global variables**
 
